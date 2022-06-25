@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Corrida de Carros</title>
+  <link rel="shortcut icon" href="./BANDEIRINHA.png" type="image/x-png">
+  <!-- Lib -->
+  <script src="./lib/p5.min.js"></script>
+  <script src="./lib/p5.dom.min.js"></script>
+  <script src="./lib/p5.sound.min.js"></script>
+  <script src="./lib/p5.play.js"></script>
+
+  <!-- Sweet Alert-->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="./lib/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./lib/sweetalert.css" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+
+  <script>
+    //DADOS DO BANCO
+    const firebaseConfig = {
+      apiKey: "AIzaSyAm2Sdl9Sb9Zpj1fHQFQe10F1NoJhfTfKM",
+      authDomain: "tudo-58ad3.firebaseapp.com",
+      databaseURL: "https://tudo-58ad3-default-rtdb.firebaseio.com",
+      projectId: "tudo-58ad3",
+      storageBucket: "tudo-58ad3.appspot.com",
+      messagingSenderId: "933740761555",
+      appId: "1:933740761555:web:ed8ef65427a1da3a939f26",
+      measurementId: "G-B3B61441GF"
+    };
+
+
+
+
+
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+</head>
+
+<body>
+  <script src="./js/Game.js"></script>
+  <script src="./js/Form.js"></script>
+  <script src="./js/Player.js"></script>
+  <script src="./sketch.js"></script>
+</body>
+
+</html>
